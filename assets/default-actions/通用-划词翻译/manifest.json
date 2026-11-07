@@ -1,0 +1,9 @@
+{
+  "name": "划词翻译",
+  "icon": "🌐",
+  "type": 5,
+  "target": "translate.ps1",
+  "process": "",
+  "description": "选中任意软件中的文字后触发，呼出独立 Fluent 划词翻译窗口，支持 DeepSeek、硅基流动、OpenAI 与免密通道。"
+}
+

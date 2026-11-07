@@ -1,0 +1,44 @@
+name: "🐛 缺陷反馈 (Bug Report)"
+description: "向开发者反馈 Pinwheel 的异常、报错或异常崩溃行为"
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您反馈问题！请尽量提供清晰的复现步骤与系统环境，以帮助我们快速定位和修复。
+  - type: input
+    id: version
+    attributes:
+      label: "Pinwheel 版本"
+      description: "您正在使用的 Pinwheel 版本（例如：v0.1.0 零依赖独立版）"
+      placeholder: "v0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: "操作系统版本"
+      description: "您的 Windows 系统版本（例如：Windows 11 23H2 / Windows 10 22H2）"
+      placeholder: "Windows 11 23H2"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "问题描述"
+      description: "请清晰描述发生了什么异常情况"
+      placeholder: "按下 Ctrl+鼠标中键呼出轮盘时..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "复现步骤"
+      description: "按什么顺序操作可以复现该问题"
+      placeholder: |
+        1. 启动 Pinwheel
+        2. 打开 Word 并选中文本
+        3. 呼出轮盘点击...
+    validations:
+      required: true

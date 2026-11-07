@@ -1,0 +1,25 @@
+name: "💡 功能建议与指令包扩展 (Feature / Action Request)"
+description: "提出新的轮盘功能想法、交互建议或希望官方适配的新软件指令包"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提出您的奇思妙想！无论是主程序交互优化，还是特定软件的高频自动化指令包需求，都可以在这里提出。
+  - type: textarea
+    id: feature
+    attributes:
+      label: "您的建议或需求描述"
+      description: "清晰说明您希望 Pinwheel 增加什么功能，或解决日常工作中的什么痛点"
+      placeholder: "希望为 VS Code 增加一键整理代码格式并保存的指令包..."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "适用场景与预期体验"
+      description: "在什么软件或什么操作情境下使用？"
+      placeholder: "在日常写代码时，按下轮盘即可直接触发..."
+    validations:
+      required: false
