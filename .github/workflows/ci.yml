@@ -1,0 +1,26 @@
+name: Build & Verify
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore src/Pinwheel/Pinwheel.csproj
+
+    - name: Build Pinwheel (Release)
+      run: dotnet build src/Pinwheel/Pinwheel.csproj --configuration Release --no-restore

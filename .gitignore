@@ -1,0 +1,23 @@
+# 构建产物
+bin/
+obj/
+publish/
+dist/
+
+# .NET 本地缓存
+.dotnet-home/
+.nuget-packages/
+
+# IDE / 编辑器
+.vs/
+.idea/
+*.user
+*.suo
+
+# 运行时生成的数据
+config.json
+debug.log
+actions/
+backups/
+assets-icons-preview/
+*.docx
